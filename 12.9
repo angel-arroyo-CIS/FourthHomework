@@ -1,0 +1,22 @@
+# Angel Arroyo
+# 1780023, December 1st, 2021
+
+parts = input().split()
+name = parts[0]
+age = 0
+while name != '-1':
+
+    try:
+        age = int(parts[1]) + 1
+        print('{} {}'.format(name, age))
+
+
+    except ValueError:
+        if age != int:
+            ago = 0
+            print('{} 0'.format(name, age))
+
+
+    # Get next line
+    parts = input().split()
+    name = parts[0]
